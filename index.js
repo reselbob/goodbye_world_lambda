@@ -11,5 +11,5 @@ exports.handler = (event, context, callback) => {
         "body": JSON.stringify(obj),
         "isBase64Encoded": false
     };
-    callback(null, obj);
+    callback(null, response);
 };
