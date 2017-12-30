@@ -16,9 +16,7 @@ describe('Basic Tests: ', () => {
             if (err) {
                 done(err);
             } else {
-                console.log(data);
-                const obj = JSON.parse(data);
-                expect(obj).to.an('object');
+                expect(data).to.an('object');
                 done();
             }
         });
