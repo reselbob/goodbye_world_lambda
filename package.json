@@ -1,0 +1,15 @@
+{
+  "name": "goodbyeworld",
+  "version": "0.0.5",
+  "description": "A simple lambda function for wiring purposes",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/test.js"
+  },
+  "author": "reselbob@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.1.0"
+  }
+}
