@@ -1,0 +1,21 @@
+Transform: 'AWS::Serverless-2016-10-31'
+Parameters:
+    OriginUrl:
+        Description: "The origin url to allow CORS requests from."
+        Type: "String"
+Resources:
+    GoodbyeWorld:
+        Type: AWS::Serverless::Function
+        Properties:
+            Handler: index.handler
+            Runtime: nodejs4.3
+            CodeUri: ./
+            Environment:
+                Variables:
+                    ORIGIN_URL: !Ref OriginUrl
+            Events:
+              GetResource:
+                Type: Api
+                Properties:
+                  Path: /message
+                  Method: get
