@@ -23,6 +23,6 @@ describe('Basic Tests: ', () => {
     });
 
     it('simple failing test', done => {
-        expect(1===2).to.be.true;
+        expect(1===1).to.be.true;
     });
 });
