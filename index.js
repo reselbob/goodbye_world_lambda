@@ -2,7 +2,7 @@
 exports.handler = (event, context, callback) => {
     const dt = new Date();
     const obj = {message: "Goodbye World!", createDate: dt.toString()};
-
+     // add the correct json structure to make the code happy with API Gateway Lambda Proxy
     const response = {
         "statusCode": 200,
         "headers": {
